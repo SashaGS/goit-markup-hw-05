@@ -5,6 +5,10 @@ body{
      background-color:#fff;
 }
 
+body:has(.backdrop.is-open){
+    overflow-y: hidden;
+}
+
 button{
     cursor: pointer;
     padding: 0;
@@ -614,7 +618,6 @@ h1,h2,h3,h4,h5,h6,p{
 /* #region modal window*/
 
 .backdrop {
-    position: relative;
     position: fixed;
     top: 0;
     left: 0;
@@ -622,22 +625,67 @@ h1,h2,h3,h4,h5,h6,p{
     height:100%;
 
     background: rgba(46, 47, 66, 0.4);
+    opacity:0;
+    visibility: hidden;
+    pointer-events: none;
 
+    transition: 300ms ease-in;
+    transition-property: opacity,visibility;
+}
+
+.backdrop.is-open{
+    opacity: 1;
+    visibility:visible;
+    pointer-events:initial;
 }
 
 .modal {
     position: absolute;
+    /* padding: 72px 24px 24px 24px; */
     top:50%;
-    left:50%;
+    left:50%; 
     width: 408px;
     min-height: 584px;
     border-radius: 4px;
 
-    transform:translateX(-50%) translateY(-50%);
+    transform:translateX(-204px) translateY(-292px); 
 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
 
+}
+
+/* .modal-content{
+    padding: 72px 24px 24px 24px;
+} */
+
+.modal-btn {
+   position: absolute;  
+   top:24px;
+   right: 24px;
+   width: 24px;
+   height: 24px;
+   border-radius: 100%;
+   border: 1px;
+   background-color:#e7e9fc ;
+}
+
+.modal-btn-icon{
+    color: currentColor;
+    stroke-width: 1px; 
+    /* stroke: rgba(0, 0, 0, 0.1); */
+}
+
+.modal-header{
+    margin-top:72px;
+    margin-right: 24px;
+    margin-left: 24px;
+    width: 360px;
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 /* #endregion */
