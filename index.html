@@ -490,7 +490,7 @@
             <input
               class="footer-form-field"
               type="email"
-              name="email"
+              name="footer-email"
               placeholder="E-mail"
             />
 
@@ -506,7 +506,7 @@
     </footer>
 
     <!-- modal window is-open-->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <!-- <div class="modal-content"> -->
         <button class="modal-btn" type="button" aria-label="close modal button">
@@ -577,26 +577,27 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <label class="feedback-agrement">
-            <input
-              class="feedback-checkbox visually-hidden"
-              type="checkbox"
-              name="feedback-agrement"
-              id="feedback-agrement"
-              value="true"
-              checked
-            />
-            <span class="feedback-toggler">
-              <svg class="feedback-toggler-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-            </span>
 
-            I accept the terms and conditions of the
-            <a class="feedback-link" href="#"> Privacy Policy</a>
-          </label>
-
-          <button class="btn modal-form" type="submit">Send</button>
+          <div class="feedback-agrement-wraper">
+            <label class="feedback-agrement">
+              <input
+                class="feedback-checkbox visually-hidden"
+                type="checkbox"
+                name="feedback-agrement"
+                id="feedback-agrement"
+                value="true"
+                checked
+              />
+              <span class="feedback-toggler">
+                <svg class="feedback-toggler-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="feedback-link" href="#"> Privacy Policy</a>
+            </label>
+            <button class="btn modal-form" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
