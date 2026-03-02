@@ -670,13 +670,14 @@ input,textarea{
    width: 24px;
    height: 24px;
    border-radius: 100%;
-   border: 1px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
    background-color:#e7e9fc ;
 
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover{
+.modal-btn:hover,
+.modal-btn:focus{
     background-color:#404BBF;
 }
 
@@ -804,7 +805,7 @@ input,textarea{
     justify-content:flex-start; 
     align-items: center;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.33;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 24px;
@@ -844,7 +845,7 @@ input,textarea{
 .feedback-toggler-icon { 
     fill: #f4f4fd ;
     opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feedback-link{
@@ -856,6 +857,7 @@ input,textarea{
 
 
 .btn.modal-form {
+    font-weight: 500px;
     border-radius: 4px;
     padding: 16px 32px;
     width: 169px;
@@ -866,6 +868,14 @@ input,textarea{
     background-color: #4d5ae5;
     margin-left: auto;
     margin-right: auto;
+    /* background-color: ; */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn.modal-form:hover,
+.btn.modal-form:focus{
+
+
 }
 /* #endregion */
 
@@ -893,6 +903,7 @@ input,textarea{
 }
 
 .footer-form-field {
+    font-size: 12px;
     border: 1px solid #fff;
     border-radius: 4px;
     max-width: 264px;
@@ -903,10 +914,17 @@ input,textarea{
     margin-right: 24px;
 
     color: #fff;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-field::placeholder{
     color: #fff;
+}
+
+.footer-form-field:focus{
+    border-color:#31d0aa;
+
 }
 
 .footer-bt-icon{
@@ -931,6 +949,14 @@ input,textarea{
     color: #fff;
 
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.btn-footer-form:hover,
+.btn-footer-form:focus{
+   background-color: #31d0aa; 
 }
 
 /* #endregion */
