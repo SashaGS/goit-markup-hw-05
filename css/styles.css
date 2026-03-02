@@ -653,7 +653,8 @@ input,textarea{
     min-height: 584px;
     border-radius: 4px;
 
-    transform:translateX(-204px) translateY(-292px); 
+    transform: translate(-50%, -50%);
+    /* transform:translateX(-204px) translateY(-292px);  */
 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
@@ -665,6 +666,9 @@ input,textarea{
 } */
 
 .modal-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
    position: absolute;  
    top:24px;
    right: 24px;
