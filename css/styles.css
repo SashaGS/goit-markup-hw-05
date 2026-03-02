@@ -933,7 +933,7 @@ input,textarea{
 .footer-form {
     max-width: 453px;
     max-height: 80px;
-    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer-form-wraper{
