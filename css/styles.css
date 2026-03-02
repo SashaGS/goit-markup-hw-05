@@ -862,7 +862,7 @@ input,textarea{
    display: inline-flex;
    justify-content: center;
    align-items: center;
-   margin-right: 8px; 
+   /* margin-right: 8px;  */
    width: 16px;
    height: 16px;
    /* background-color:transparent; */
