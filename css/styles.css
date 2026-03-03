@@ -649,6 +649,7 @@ input,textarea{
     padding-top:72px; 
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 24px;
 
     top:50%;
     left:50%; 
@@ -721,17 +722,17 @@ input,textarea{
 } */
 
 .modal-header{
-    /*  margin-top:72px; */
-    /* margin-right: 24px;
-    margin-left: 24px;  */
-    margin-bottom: 16px;
     width: 360px;
-
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+
+     /*  margin-top:72px; */
+    /* margin-right: 24px;
+    margin-left: 24px;  */
+    margin-bottom: 16px;
 }
 
 /* .feedback-form { */
@@ -928,7 +929,7 @@ input,textarea{
     margin-left: auto;
     /* background-color: ; */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
 }
 
 .btn.modal-form:hover,
